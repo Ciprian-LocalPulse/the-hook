@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE HOOK™ | Defensive Deception Infrastructure</title>
+  <meta name="description" content="THE HOOK™ is a public-facing defensive deception infrastructure concept focused on decoy telemetry, detection visibility, and enterprise-grade security architecture." />
+  <style>
+    :root {
+      --bg: #071018;
+      --panel: #0d1722;
+      --panel-2: #101d2b;
+      --line: #1f3347;
+      --text: #d9e8f5;
+      --muted: #89a0b7;
+      --accent: #46d9ff;
+      --accent-2: #7dffb3;
+      --danger: #ff6b8a;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(70, 217, 255, 0.08), transparent 30%),
+        radial-gradient(circle at bottom left, rgba(125, 255, 179, 0.07), transparent 25%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(7, 16, 24, 0.76);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      gap: 20px;
+    }
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .brand span { color: var(--accent); }
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 88px 0 72px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+    .hero-copy, .hero-card, .panel, .card {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius: 24px;
+      box-shadow: 0 18px 60px rgba(0,0,0,0.24);
+    }
+    .hero-copy {
+      padding: 36px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(42px, 8vw, 78px);
+      line-height: 0.95;
+      margin: 0;
+      letter-spacing: -0.04em;
+    }
+    h1 .accent { color: var(--accent); }
+    .sub {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 760px;
+    }
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+    .btn {
+      padding: 14px 18px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .btn.primary {
+      background: linear-gradient(135deg, rgba(70,217,255,0.2), rgba(125,255,179,0.16));
+      border-color: rgba(70,217,255,0.4);
+    }
+    .btn.secondary {
+      color: var(--muted);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .hero-card {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      background: linear-gradient(160deg, rgba(70,217,255,0.08), rgba(125,255,179,0.05) 50%, rgba(255,255,255,0.02));
+    }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .metric {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 18px;
+      padding: 18px;
+    }
+    .metric strong {
+      display: block;
+      font-size: 28px;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    .metric span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .legal-tag {
+      font-size: 12px;
+      color: var(--danger);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    section {
+      padding: 28px 0 12px;
+    }
+    .section-head {
+      margin-bottom: 20px;
+    }
+    .section-head .mini {
+      color: var(--accent);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 10px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.04;
+      letter-spacing: -0.03em;
+    }
+    .section-head p {
+      color: var(--muted);
+      max-width: 760px;
+      margin-top: 14px;
+    }
+
+    .grid-3, .grid-2 {
+      display: grid;
+      gap: 18px;
+    }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+    .card {
+      padding: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0.01));
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .panel {
+      padding: 28px;
+      margin-top: 10px;
+    }
+
+    .architecture {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .layer {
+      padding: 18px 20px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.025);
+    }
+    .layer strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .layer p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .arrow {
+      text-align: center;
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .list {
+      display: grid;
+      gap: 14px;
+      margin-top: 6px;
+    }
+    .list-item {
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.02);
+    }
+    .list-item strong { display: block; margin-bottom: 6px; }
+    .list-item span { color: var(--muted); }
+
+    .footer {
+      padding: 46px 0 56px;
+      margin-top: 36px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footer strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: 8px;
+    }
+    .footer-legal {
+      margin-top: 12px;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      .nav-inner { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">THE <span>HOOK™</span></div>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#principles">Principles</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#scope">Public Scope</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="hero" id="overview">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Defensive Deception Infrastructure • Public Edition</div>
+          <h1>THE <span class="accent">HOOK™</span></h1>
+          <p class="sub">
+            A public-facing defensive deception platform concept centered on decoy telemetry,
+            high-confidence detection signals, analyst visibility, and enterprise-grade security architecture.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="./README.md">Read Repository Overview</a>
+            <a class="btn secondary" href="./SECURITY.md">Responsible Disclosure</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div>
+            <div class="legal-tag">Public Repository • Sanitized Content</div>
+            <p style="color: var(--muted); margin-top: 10px;">
+              This edition is intentionally limited to safe architectural communication,
+              product presentation, and defensive research framing.
+            </p>
+          </div>
+          <div class="metric-grid">
+            <div class="metric"><strong>Defensive</strong><span>Positioning and use case framing</span></div>
+            <div class="metric"><strong>Sanitized</strong><span>Public-safe technical disclosure</span></div>
+            <div class="metric"><strong>Enterprise</strong><span>Credible repo and product posture</span></div>
+            <div class="metric"><strong>Proprietary</strong><span>Owned intellectual property</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="principles">
+      <div class="section-head">
+        <div class="mini">Core Principles</div>
+        <h2>Built to communicate maturity without exposing sensitive implementation detail.</h2>
+        <p>
+          THE HOOK™ public edition is structured to present product quality, technical depth, and security architecture thinking while remaining repository-safe and commercially credible.
+        </p>
+      </div>
+      <div class="grid-3">
+        <article class="card"><h3>Isolation First</h3><p>Decoy environments should remain separated from production boundaries and treated as defensive observation surfaces.</p></article>
+        <article class="card"><h3>Signal Over Noise</h3><p>The value proposition centers on meaningful telemetry from suspicious interaction, not volume for its own sake.</p></article>
+        <article class="card"><h3>Responsible Disclosure</h3><p>Public documentation should avoid operational detail that could enable misuse or unsafe deployment.</p></article>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <div class="section-head">
+        <div class="mini">Architecture</div>
+        <h2>Safe high-level system view.</h2>
+        <p>
+          The public architecture below reflects a defensive and sanitized interpretation suitable for documentation, recruiting, investor review, and design-partner discussions.
+        </p>
+      </div>
+      <div class="panel">
+        <div class="architecture">
+          <div class="layer">
+            <strong>Exposure Layer</strong>
+            <p>Decoy assets, synthetic telemetry tokens, and controlled observable services designed for defensive monitoring.</p>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="layer">
+            <strong>Collection Layer</strong>
+            <p>Structured event normalization, telemetry pipelines, and defensive logging infrastructure.</p>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="layer">
+            <strong>Intelligence Layer</strong>
+            <p>Correlation, enrichment, analyst review support, and reporting logic for security operations teams.</p>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="layer">
+            <strong>Operations Layer</strong>
+            <p>Dashboards, integrations, exports, and enterprise workflow visibility for SOC and leadership stakeholders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="scope">
+      <div class="section-head">
+        <div class="mini">Public Scope</div>
+        <h2>What belongs in the public repository.</h2>
+      </div>
+      <div class="grid-2">
+        <div class="panel">
+          <h3 style="margin-top:0;">Included</h3>
+          <div class="list">
+            <div class="list-item"><strong>Architecture Documentation</strong><span>Sanitized diagrams, product notes, and high-level design rationale.</span></div>
+            <div class="list-item"><strong>UI and Product Presentation</strong><span>Landing pages, dashboard concepts, static previews, and public-facing collateral.</span></div>
+            <div class="list-item"><strong>Synthetic Telemetry</strong><span>Mock event structures and safe demo examples for analytics storytelling.</span></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 style="margin-top:0;">Excluded</h3>
+          <div class="list">
+            <div class="list-item"><strong>Offensive Workflows</strong><span>No exploitation guidance, no live traffic manipulation, and no unauthorized targeting logic.</span></div>
+            <div class="list-item"><strong>Operational Tradecraft</strong><span>No sensitive routing methods, credential abuse patterns, or deployment playbooks with misuse risk.</span></div>
+            <div class="list-item"><strong>Restricted Enterprise Detail</strong><span>No private research artifacts, internal infrastructure specifics, or customer-sensitive content.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-head">
+        <div class="mini">Ownership</div>
+        <h2>Proprietary public repository.</h2>
+        <p>
+          THE HOOK™ is presented as a proprietary concept and public portfolio-grade product artifact.
+          Commercial use, redistribution, and private enterprise access require written permission.
+        </p>
+      </div>
+      <div class="panel">
+        <strong style="display:block; font-size: 18px; margin-bottom: 10px;">© 2026 Ciprian Stefan Plesca. All Rights Reserved.</strong>
+        <p style="margin:0; color: var(--muted);">
+          THE HOOK™ and all associated materials are proprietary intellectual property.
+          Unauthorized copying, reproduction, modification, distribution, public reposting,
+          derivative commercialization, or operational deployment is strictly prohibited without written permission.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <strong>THE HOOK™ — Defensive Deception Infrastructure</strong>
+      <div>Public Edition • Sanitized Documentation • Enterprise-Safe Presentation</div>
+      <div class="footer-legal">© 2026 Ciprian Stefan Plesca. All Rights Reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
