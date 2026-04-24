@@ -192,22 +192,6 @@ For licensing, partnership, design-partner discussions, or private enterprise ac
 
 ---
 
-## Suggested GitHub Topics
-
-```text
-deception-technology
-cybersecurity
-threat-detection
-security-architecture
-defensive-security
-threat-intelligence
-soc
-zero-trust
-security-operations
-enterprise-software
-```
-
----
 
 ## Maintainer
 
