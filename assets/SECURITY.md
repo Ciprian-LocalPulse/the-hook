@@ -1,84 +1,86 @@
-# SECURITY.md
+# Security Policy
 
-## Security Policy
+## Overview
 
-Thank you for helping improve the safety and integrity of this repository.
+THE HOOK is a defensive deception technology concept with a public evaluation repository and a separate Private Enterprise Edition.
 
-**THE HOOK™** is presented as a **defensive, sanitized, and public-facing** repository. Security reports are welcome when they relate to:
+This security policy applies only to the public repository and public preview materials. It does not grant access to private implementation detail, telemetry pipelines, detection rules, token generation methods, client environments, private playbooks, prompts, secrets, or commercial implementation materials.
 
-- accidental exposure of sensitive implementation detail
+## Supported Scope
+
+Security reports are welcome for:
+
+- exposed secrets, credentials, keys, or tokens
+- accidental disclosure of private implementation detail
 - unsafe public documentation
-- secrets, tokens, or credentials committed by mistake
-- privacy or data exposure risk in public materials
-- unsafe demo behavior
+- unsafe public demo behavior
 - repository integrity concerns
-- brand or supply-chain abuse involving this repository
+- misleading public claims that could create buyer or user risk
+- brand impersonation or malicious mirrors involving this repository
 
----
+Out of scope:
 
-## Scope
-
-This repository is intended for public-safe architectural communication and defensive product presentation.
-
-Please report issues such as:
-
-- exposed secrets or keys
-- unsafe scripts or unintended network behavior
-- misleading documentation that could encourage misuse
-- repository compromise or suspicious tampering
-- unauthorized mirrors or impersonation attempts that appear malicious
-
-Please do **not** use this policy to request:
-
-- offensive guidance
-- exploit development
-- traffic interception methods
-- credential collection logic
-- attack-routing implementation detail
-- production misuse advice
-
----
+- requests for operational deception logic
+- requests for telemetry pipelines or detection rules
+- requests for token generation methods
+- requests for private playbooks, prompts, or client environment details
+- exploit development or offensive guidance
+- testing against systems, accounts, or infrastructure not owned by the maintainer
+- social engineering, phishing, spam, or denial-of-service activity
 
 ## Reporting a Vulnerability
 
-Please send responsible disclosures privately to the maintainer with:
+Do not open a public GitHub issue for security vulnerabilities.
 
-1. a clear description of the issue
-2. affected file(s) or path(s)
-3. reproduction steps if applicable
-4. impact assessment
-5. suggested remediation if available
+Use a private channel:
 
-Keep reports concise, factual, and confidential.
+- Security inquiry: contact@localpulse.pro
+- Private briefing: https://cal.com/ciprian-stefan-plesca
 
----
+Use the subject line:
 
-## Coordinated Disclosure Expectations
+```text
+[SECURITY] THE HOOK - <short summary>
+```
 
-Please:
+Please include:
+
+- affected file or URL
+- clear description of the issue
+- reproduction steps if applicable
+- impact assessment
+- whether any sensitive material appears exposed
+- suggested remediation, if available
+- your preferred contact method
+
+## Responsible Disclosure Expectations
+
+Researchers and reviewers must:
 
 - avoid public disclosure before review
-- avoid including live secrets in issue threads
-- avoid testing against systems you do not own or control
-- avoid any action that could damage availability, integrity, or trust
+- avoid testing systems they do not own or control
+- avoid accessing, modifying, deleting, or exfiltrating data
+- avoid posting live secrets in public issues, pull requests, or discussions
+- keep reports concise, factual, and confidential
 
-Good-faith reporting is appreciated.
+The maintainer will make a good-faith effort to review legitimate reports, validate impact, and remediate public-repository issues in a timely manner.
 
----
+## Public Repository Safety Standard
 
-## Public Repo Safety Standard
+The maintainer may remove, reject, or revise material that:
 
-The maintainer may remove or reject content that:
-
-- increases dual-use risk
-- introduces ambiguous offensive capability
-- exposes restricted architectural detail
 - weakens the defensive framing of the project
+- exposes restricted operational detail
+- increases dual-use ambiguity
+- introduces secrets or private material
+- creates procurement, legal, security, or brand risk
 
----
+## Private Enterprise Boundary
 
-## Ownership Notice
+Security review of the Private Enterprise Edition, if requested by an authorized buyer or partner, must be handled through a separate private diligence process under written agreement.
 
-**© 2026 Ciprian Stefan Plesca. All Rights Reserved.**
+Private package access is not available through public issues, pull requests, or security reports.
 
-THE HOOK™ repository and associated materials are proprietary. Security review participation does not grant any license or ownership right.
+## No Warranty
+
+This public repository is provided for evaluation and discussion only. It is not a security certification, audit report, legal opinion, production readiness attestation, or compliance certification.

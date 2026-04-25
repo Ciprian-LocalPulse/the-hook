@@ -1,0 +1,103 @@
+THE HOOK™  PROPRIETARY LICENSE
+Version 1.0
+Effective Date: April 22, 2026
+
+Copyright © 2026 Ciprian Stefan Plesca.
+All Rights Reserved.
+
+────────────────────────────────────────
+1. OWNERSHIP
+────────────────────────────────────────
+
+THE HOOK™, including but not limited to all source code, designs,
+architectures, blueprints, concepts, branding, documentation,
+visual assets, strategies, workflows, and derivative materials,
+is the sole and exclusive intellectual property of
+Ciprian Stefan Plesca.
+
+No ownership rights are transferred under this License.
+
+────────────────────────────────────────
+2. PERMITTED USE
+────────────────────────────────────────
+
+You may:
+
+• View this repository for educational and evaluation purposes only.
+• Reference public materials with proper attribution.
+• Contact the owner for licensing discussions.
+
+────────────────────────────────────────
+3. STRICTLY PROHIBITED
+────────────────────────────────────────
+
+Without prior written permission from the Owner, you may NOT:
+
+• Copy substantial parts of the project
+• Reproduce source code or architecture
+• Fork for commercial or competitive purposes
+• Modify and redistribute any materials
+• Sell, sublicense, lease, or monetize any portion
+• Use branding, names, marks, or logos
+• Create derivative competing products
+• Mirror or republish this repository elsewhere
+• Train AI models on repository content
+• Use concepts or materials for client delivery
+
+────────────────────────────────────────
+4. COMMERCIAL LICENSES
+────────────────────────────────────────
+
+Commercial usage, enterprise licensing, partnerships,
+white-label agreements, consulting rights, and deployment rights
+require a separate written commercial agreement.
+
+For inquiries, contact the Owner directly.
+
+────────────────────────────────────────
+5. TRADEMARKS
+────────────────────────────────────────
+
+THE HOOK™ name, brand identity, visual identity,
+and associated marks are proprietary and protected.
+
+Unauthorized use is prohibited.
+
+────────────────────────────────────────
+6. ENFORCEMENT
+────────────────────────────────────────
+
+Unauthorized use may constitute copyright infringement,
+trade secret misuse, unfair competition, and other violations
+under applicable international laws.
+
+The Owner reserves all rights and remedies.
+
+────────────────────────────────────────
+7. NO WARRANTY
+────────────────────────────────────────
+
+This repository and all materials are provided
+"AS IS" without warranties of any kind.
+
+────────────────────────────────────────
+8. GOVERNING RIGHTS
+────────────────────────────────────────
+
+All rights not expressly granted are reserved exclusively
+by Ciprian Stefan Plesca.
+
+────────────────────────────────────────
+9. ACCEPTANCE
+────────────────────────────────────────
+
+By accessing, viewing, cloning, or interacting with this repository,
+you acknowledge and accept these terms.
+
+────────────────────────────────────────
+
+THE HOOK™
+Premium Proprietary License
+
+© 2026 Ciprian Stefan Plesca.
+All Rights Reserved.
