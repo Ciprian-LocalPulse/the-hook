@@ -1,103 +1,22 @@
-THE HOOK™  PROPRIETARY LICENSE
-Version 1.0
-Effective Date: April 22, 2026
+THE HOOK PROPRIETARY LICENSE - LEGACY NOTICE
+Version 1.1
+Effective Date: April 26, 2026
 
-Copyright © 2026 Ciprian Stefan Plesca.
-All Rights Reserved.
+Copyright (c) 2026 Ciprian Stefan Plesca.
+All rights reserved.
 
-────────────────────────────────────────
-1. OWNERSHIP
-────────────────────────────────────────
+This file is retained for compatibility with earlier repository references.
 
-THE HOOK™, including but not limited to all source code, designs,
-architectures, blueprints, concepts, branding, documentation,
-visual assets, strategies, workflows, and derivative materials,
-is the sole and exclusive intellectual property of
-Ciprian Stefan Plesca.
+The current standard repository license is maintained in:
 
-No ownership rights are transferred under this License.
+LICENSE.md
 
-────────────────────────────────────────
-2. PERMITTED USE
-────────────────────────────────────────
+THE HOOK is proprietary intellectual property. The Public Edition is available for public viewing, evaluation, portfolio review, defensive-security discussion, and commercial discovery only.
 
-You may:
+No open source license is granted. Commercial use, redistribution, sublicensing, production deployment, white-label use, derivative commercial products, or use of THE HOOK branding requires prior written permission from the owner.
 
-• View this repository for educational and evaluation purposes only.
-• Reference public materials with proper attribution.
-• Contact the owner for licensing discussions.
+The Public Edition does not include and does not license any Private Enterprise Edition materials, including deception logic, telemetry pipelines, detection rules, client environments, token generation, private playbooks, prompts, API keys, secrets, production deployment methods, or commercial implementation details.
 
-────────────────────────────────────────
-3. STRICTLY PROHIBITED
-────────────────────────────────────────
+For complete terms, refer to LICENSE.md.
 
-Without prior written permission from the Owner, you may NOT:
-
-• Copy substantial parts of the project
-• Reproduce source code or architecture
-• Fork for commercial or competitive purposes
-• Modify and redistribute any materials
-• Sell, sublicense, lease, or monetize any portion
-• Use branding, names, marks, or logos
-• Create derivative competing products
-• Mirror or republish this repository elsewhere
-• Train AI models on repository content
-• Use concepts or materials for client delivery
-
-────────────────────────────────────────
-4. COMMERCIAL LICENSES
-────────────────────────────────────────
-
-Commercial usage, enterprise licensing, partnerships,
-white-label agreements, consulting rights, and deployment rights
-require a separate written commercial agreement.
-
-For inquiries, contact the Owner directly.
-
-────────────────────────────────────────
-5. TRADEMARKS
-────────────────────────────────────────
-
-THE HOOK™ name, brand identity, visual identity,
-and associated marks are proprietary and protected.
-
-Unauthorized use is prohibited.
-
-────────────────────────────────────────
-6. ENFORCEMENT
-────────────────────────────────────────
-
-Unauthorized use may constitute copyright infringement,
-trade secret misuse, unfair competition, and other violations
-under applicable international laws.
-
-The Owner reserves all rights and remedies.
-
-────────────────────────────────────────
-7. NO WARRANTY
-────────────────────────────────────────
-
-This repository and all materials are provided
-"AS IS" without warranties of any kind.
-
-────────────────────────────────────────
-8. GOVERNING RIGHTS
-────────────────────────────────────────
-
-All rights not expressly granted are reserved exclusively
-by Ciprian Stefan Plesca.
-
-────────────────────────────────────────
-9. ACCEPTANCE
-────────────────────────────────────────
-
-By accessing, viewing, cloning, or interacting with this repository,
-you acknowledge and accept these terms.
-
-────────────────────────────────────────
-
-THE HOOK™
-Premium Proprietary License
-
-© 2026 Ciprian Stefan Plesca.
-All Rights Reserved.
+For licensing, partnership, enterprise evaluation, or Private Enterprise Edition access, contact the repository owner through the public GitHub profile or the contact path referenced in the repository README.
